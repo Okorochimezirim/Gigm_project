@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="...">
+    <title>GIGMobility - Nigeria's Leading Tech Driven Transport Company</title>
+    <link rel="stylesheet" href="gigm.css">
+    <link rel="icon" href="Images/GIGM.png">
+    <link rel="apple-touch-icon" href="Images/GIGM.png">
+</head>
+<body>
+    <div class="main">
+        <!--fixed header starts here-->
+        <div class="navbar-section">
+            <div class="container">
+                <!--left side of fixed header starts here-->
+                <nav class="nav-a">
+                    <a href="https://gigm.com/" class="GIGM">
+                        <img src="Images/GIGM.png" alt="Home logo" class="home-logo">
+                    </a>
+                </nav>
+                <!--left side of fixed header ends here-->
+                <!--right side of fixed header starts here-->
+                <div class="nav-b">
+                    <ul class="menu-links">
+                        <li class="notify">
+                            <button id="sub-active" class="active">
+                                Move Freely
+                                <img src="Images/arrowdown.png" alt="" class="play-button-facing-downwards">
+                            </button>
+                            <ul class="submenu" id="sub-menu">
+                                <li class="notify1" style="margin-bottom: 10px;"><a href="/Pickupservice">Pick up Service</a></li>
+                                <li class="notify1"><a href="/hire-vehicle">Hire a Bus</a></li>
+                            </ul>
+                        </li>
+                        <li class="notify">
+                            <button id="sub-active2" class="active">
+                                Do Freely
+                                <img src="Images/arrowdown.png" alt="" class="play-button-facing-downwards" style="margin-right: 20px;">
+                            </button>
+                            <ul class="submenu" id="sub-menu2">
+                                <li class="notify1" style="margin-bottom: 10px;"><a href="/paybills">Bills Payment</a></li>
+                                <li class="notify1"><a href="/enterprise">Enterprise Partner</a></li>
+                            </ul>
+                        </li>
+                        <li class="notify" style="margin-left: -20px;">
+                            <a class="notify2" href="/suggest-route">Suggest Route</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="blue-btn-nav" href="/entry">Sign In / Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--right side of fixed header ends here-->
+            </div>
+        </div>
+        <!--fixed header ends here-->
+        <!--section with the express road bg img starts here-->
+        <section class="main-express">
+            <div class="container">
+                <div class="main-express1">
+                    <!--left side of section starts here-->
+                    <div class="left-card">
+                        <h1>The modern way to <br> commute across cities</h1>
+                        <br>
+                        <p>
+                            GIGM is an African technology powered company, <br>
+                            providing seamless mobility services to commuters <br>
+                            across Africa
+                        </p>
+                    </div>
+                    <!--left side of section ends here-->
+                    <!--right side of section starts here-->
+                    <div class="right-card">
+                        <section id="open-positions">
+                            <div class="positions">
+                                <div class="position-filters">
+                                    <label class="tab-label active-tabs">Book a seat</label>
+                                    <label class="tab-label">Hire a bus</label>
+                                    <label class="tab-label">Booking status</label>
+                                </div>
+                                <div class="position-group active-content">
+                                    <div class="position-post">
+                                        <div class="book-a-seat">
+                                            <input id="oneway-book-a-seat" type="radio" name="tabs" checked="">
+                                            <label for="oneway-book-a-seat" class="oneway-book-a-seat">One Way</label>
+                                            <input id="roundtrip-book-a-seat" type="radio" name="tabs">
+                                            <label for="roundtrip-book-a-seat" class="roundtrip-book-a-seat">Round Trip</label>
+                                            <br>
+                                            <br>
+                                            <section id="content1">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <label class="label-auth">Travelling From</label>
+                                                        <div class="basic-single select_default_sty css-2b097c-container" id="departure">
+                                                            <span class="css-1f43avz-a11yText-A11yText"></span>
+                                                            <div class="select__control css-yk16xz-control">
+                                                                <select name="Departure Terminal" id="stateSelect">
+                                                                    <option value="Departure Terminal" disabled selected>Departure Terminal</option>
+                                                                    <option value="Akwa Ibom">Akwa Ibom =&gt; Uyo</option>
+                                                                    <option value="Cross River">Cross River =&gt; Calabar</option>
+                                                                    <option value="Edo">Edo =&gt; Benin</option>
+                                                                    <option value="Enugu">Enugu =&gt; Nsukka</option>
+                                                                    <option value="F.C.T">F.C.T =&gt; Abuja</option>
+                                                                    <option value="Imo">Imo =&gt; Owerri</option>
+                                                                    <option value="Kano">Kano =&gt; Kano</option>
+                                                                    <option value="Kaduna">Kaduna =&gt; Kaduna</option>
+                                                                    <option value="Kastina">Kastina =&gt; Kastina</option>
+                                                                    <option value="Lagos">Lagos =&gt; Ikeja</option>
+                                                                    <option value="Rivers">Rivers =&gt; Portharcout</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <label class="label-auth">Travelling To</label>
+                                                        <div class="basic-single select_default_sty css-2b097c-container" id="arrival">
+                                                            <span class="css-1f43avz-a11yText-A11yText"></span>
+                                                            <div class="select__control css-yk16xz-control">
+                                                                <select name="Arrival Terminal" id="stateSelect">
+                                                                    <option value="Arrival Terminal" disabled selected>Arrival Terminal</option>
+                                                                    <option value="Akwa Ibom">Akwa Ibom =&gt; Uyo</option>
+                                                                    <option value="Cross River">Cross River =&gt; Calabar</option>
+                                                                    <option value="Edo">Edo =&gt; Benin</option>
+                                                                    <option value="Enugu">Enugu =&gt; Nsukka</option>
+                                                                    <option value="F.C.T">F.C.T =&gt; Abuja</option>
+                                                                    <option value="Imo">Imo =&gt; Owerri</option>
+                                                                    <option value="Kano">Kano =&gt; Kano</option>
+                                                                    <option value="Kaduna">Kaduna =&gt; Kaduna</option>
+                                                                    <option value="Kastina">Kastina =&gt; Kastina</option>
+                                                                    <option value="Lagos">Lagos =&gt; Ikeja</option>
+                                                                    <option value="Rivers">Rivers =&gt; Portharcout</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row row-grid">
+                                                    <div class="col-md-6">
+                                                        <label class="label-auth">Departure Date</label>
+                                                        <div class="react-datepicker-wrapper">
+                                                            <div class="react-datepicker__input-container ">
+                                                                <span class="react-datepicker__aria-live"></span>
+                                                                <input type="text" placeholder="Select Date...">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="label-auth">Adults</label>
+                                                        <div class="basic-single select_default_sty css-2b097c-container">
+                                                            <span class="css-1f43avz-a11yText-A11yText">
+                                                            </span>
+                                                            <div class="select__control css-yk16xz-control">
+                                                                <select name="Numbers" id="stateSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <button type="button" title="Proceed" class="Button_Wrap">
+                                                             Proceed
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--right side of section ends here-->
+                </div>
+            </div>
+        </section>
+        <!--section with the express road bg img ends here-->
+        <!--section with trip locations starts here-->
+        <section class="hot-trips">
+            <!--section text with whitesmoke bg color starts here-->
+            <div class="LHS">
+                <div class="BTP">
+                    <h1>Best Trip Prices</h1>
+                    <p>Bringing you more routes at the best fares.</p>
+                </div>
+                <button type="button" class="la" style="display: block;">&larr;</button>
+                <button type="button" class="ra" style="display: block;">&rarr;</button>
+            </div>
+            <!--section text with whitesmoke bg color ends here-->
+            <!--section images starts here-->
+            <div class="RHS">
+                <!--lagos-to-edo starts here-->
+                <div class="lagos-to-edo">
+                    <div class="bottom-of-bg-img">
+                        <p>Lagos (Ajah) to Edo (Uselu)</p>
+                        <button type="button" class="BN" style="position: relative; top: 25px;">Book Now</button>
+                    </div>
+                </div>
+                <!--lagos-to-edo ends here-->
+                <!--rivers-to-abuja starts here-->
+                <div class="rivers-to-abuja">
+                    <div class="bottom-of-bg-img">
+                        <p>Rivers (Portharcout) to FCT Abuja (Utako)</p>
+                        <button type="button" class="BN">Book Now</button>
+                    </div>
+                </div>
+                <!--rivers-to-abuja ends here-->
+                <!--rivers-to-lagos starts here-->
+                <div class="rivers-to-lagos">
+                    <div class="bottom-of-bg-img">
+                        <p>Rivers (Portharcout) to Lagos (Ajah)</p>
+                        <button type="button" class="BN">Book Now</button>
+                    </div>
+                </div>
+                <!--rivers-to-lagos ends here-->
+            </div>
+            <!--section images ends here-->
+        </section>
+        <!--section with trip locations ends here-->
+        <!--app section starts here-->
+        <section class="app-section">
+            <!--app section text with blue bg color starts here-->
+            <div class="app-section-text">
+                <div>
+                    <h1>Enjoy the <span style="color: red; background: none;">GIGM Appvantage</span></h1>
+                    <h1>Move Freely, Do Easily</h1>
+                    <p>It is all you need in one travel app. Book bus tickets, hire a vehicle and pay bills.</p>
+                    <a target="_blank" rel="noreferrer" href="https://onelink.to/j7k4zu"> 
+                        <img src="Images/google.4468f3b8.jpg" class="download-btn-btn">
+                    </a>
+                        &nbsp;
+                    <a target="_blank" rel="noreferrer" href="https://onelink.to/j7k4zu">
+                        <img src="Images/appstore.202c16f1.jpg" class="download-btn-btn">
+                    </a>
+                </div>
+            </div>
+            <!--app section text with blue bg color ends here-->
+            <!--app section image starts here-->
+            <div class="app-section-image">
+                <img src="Images/phonebg.7295df56.jpg" style="width: 100%;">
+            </div>
+            <div class="col-md-7">
+                <img src="Images/appline.d0ff37aa.jpg" class="appline">
+            </div>
+            <!--app section img ends here-->
+        </section>
+        <!--app section ends here-->
+        <!--wallet and card section starts here-->
+        <section class="wallet-section">
+            <div class="container">
+                <div class="row row-grid">
+                    <!--section text with whitesmoke bg color starts here-->
+                    <div class="col-md-6 align-self-center">
+                        <h1>The lightest digital wallet you will ever own</h1>
+                        <br>
+                        <p>The GIGM digital wallet is a seamless way to pay for transactions within our ecosystem. Purchase bus tickets, airtime, data and pay for utility bills using the digital wallet available only on the mobile app.</p>
+                    </div>
+                    <!--section text with whitesmoke bg color ends here-->
+                    <!--section img starts here-->
+                    <div class="col-md-6">
+                        <img src="Images/card.10c67e8f.jpg" class="img-fluid">
+                    </div>
+                    <!--section img ends here-->
+                </div>
+            </div>
+        </section>
+        <!--wallet section ends here-->
+        <!--section containing blue menu and man img starts here-->
+        <section class="ep-section">
+            <div class="container">
+                <div class="row row-grid">
+                    <!--section text with blue bg starts here-->
+                    <div class="col-md-6">
+                        <div class="ep-apply">
+                            <h1>We do the heavy lifting </h1>
+                            <p>Earn easy with GIGM</p>
+                            <p>Become an enterprise partner today!</p>
+                            <div class="ep-btn">
+                                <button type="button" title="Start Earning" class="Button_Wrap" style="background: rgb(226, 29, 0); cursor: pointer; margin: 20px 0px;">Start Earning</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--section text with blue bg color ends here-->
+                    <!--section img starts here-->
+                    <div class="col-md-6 align-self-center">
+                        <img src="Images/man.6270bbd6.jpg" class="ep-apply-image">
+                    </div>
+                    <!--section img ends here-->
+                </div>
+            </div>
+        </section>
+        <!--section containing blue menu and man img ends here-->
+        <!--footer starts here-->
+        <div>
+            <footer class="last-section pt-5 pb-5">
+                <div class="container">
+                    <div class="footer-cards">
+                        <!--gigm icon starts here-->
+                        <div class="footer-card footer-logo-mobile">
+                            <a href="https://gigm.com/">
+                                <img src="Images/GIGM bottom.png" alt="gigm logo" style="margin-left: 20px;">
+                            </a>
+                        </div>
+                        <!--gigm icon ends here-->
+                        <!--company starts here-->
+                        <div class="footer-card mb-5">
+                            <h1>Company</h1>
+                            <a href="https://gigm.com/About-Us">
+                                <p>About Us</p>
+                            </a>
+                            <a href="https://gigm.com/About-Us/#our-team">
+                                <p>Team</p>
+                            </a>
+                        </div>
+                        <!--company ends here-->
+                        <!--experience starts here-->
+                        <div class="footer-card mb-5">
+                            <h1>Experience</h1>
+                            <a href="https://gigm.com/Contact-Us">
+                                <p>Contact Us</p>
+                            </a>
+                            <a href="https://gigm.com/Faq">
+                                <p>FAQs</p>
+                            </a>
+                            <a href="https://gigm.com/Bus-Terminal">
+                                <p>Find a Terminal</p>
+                            </a>
+                            <a rel="noreferrer" href="https://blog.gigm.com/">
+                                <p>Blog</p>
+                            </a>
+                        </div>
+                        <!--experience ends here-->
+                        <!--terms starts here-->
+                        <div class="footer-card">
+                            <h1>Terms</h1>
+                            <a href="https://gigm.com/Privacy-Policy">
+                                <p>Privacy Policy</p>
+                            </a>
+                            <a href="https://gigm.com/Terms-and-Conditions">
+                                <p>Terms &amp; Conditions</p>
+                            </a>
+                        </div>
+                        <!--terms ends here-->
+                        <!--connect with us and social media icons starts here-->
+                        <div class="footer-card">
+                            <div class="socialfootericon">
+                                <h1>Connect With Us</h1>
+                                <a target="_blank" rel="noreferrer" href="https://twitter.com/GIGMobility?s=09">
+                                    <img src="Images/iconmonstr-twitter-1.png" alt="">
+                                </a>
+                                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/GIGMobility">
+                                    <img src="Images/iconmonstr-facebook-4.png" style="margin: 0px 20px;" alt="">
+                                </a>
+                                <a target="_blank" rel="noreferrer" href="https://instagram.com/gigmobility?utm_medium=copy_link">
+                                    <img src="Images/iconmonstr-instagram-11.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!--connect with us and social media icons ends here-->
+                    </div>
+                </div>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <div class="container" style="height: 30px;">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h6>GIG Mobility</h6>
+                        </div>
+                        <!--move to top of page starts here-->
+                        <div class="col-md-2 offset-2">
+                            <a href="#top" target="_top">
+                                <div class="footer-block-square">
+                                    <img src="Images/arrow-up-small-footer.2a5519a9.jpg" style="border-radius: 4px;" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <!--move to top of page ends here-->
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--footer ends here-->
+    <img id="footer-image" src="Images/chat2(1).png"> <!--fixed chat img-->
+    <!--fixed dropdown menu starts here-->
+    <div class="dropdown">
+        <button class="dropdown-toggle">
+            <img src="Images/arrowdown.png" style="position: relative; right: 5px;" alt="">
+        </button>
+        <ul class="dropdown-menu">
+            <li class="Button_Wrap" style="background-color: red; width: 180px;"><a href="#">Click here to minimize</a></li>
+        </ul>
+    </div>
+    <!--fixed dropdown menu ends here-->
+</body>
+</html>
